@@ -1,14 +1,14 @@
 # NLP Based Question Tagging and Similarity Detection
 This project implements an NLP-based system to automatically detect question similarity and assign relevant tags using a dataset of 60,000 Stack Overflow questions. The system is designed in three major phases:
 
-    Text Preprocessing
-    Clean and normalize raw question text (title and body) by removing HTML tags, special characters, and unnecessary content to prepare it for analysis and modeling.
+1. Text Preprocessing
+Clean and normalize raw question text (title and body) by removing HTML tags, special characters, and unnecessary content to prepare it for analysis and modeling.
 
-    Similarity Retrieval with Word2Vec
-    Train a Word2Vec model on the dataset and convert questions into document embeddings. Using cosine similarity, the system retrieves the most semantically similar questions for a given query. Visualizations in 3D space are also used to inspect word and document embeddings.
+2. Similarity Retrieval with Word2Vec
+Train a Word2Vec model on the dataset and convert questions into document embeddings. Using cosine similarity, the system retrieves the most semantically similar questions for a given query. Visualizations in 3D space are also used to inspect word and document embeddings.
 
-    Tag Prediction using KNN
-    For an unseen question, the model finds its nearest neighbors in the training data using embeddings, extracts their tags, and predicts appropriate tags. Accuracy is measured by comparing predicted tags with the actual ones.
+3. Tag Prediction using KNN
+For an unseen question, the model finds its nearest neighbors in the training data using embeddings, extracts their tags, and predicts appropriate tags. Accuracy is measured by comparing predicted tags with the actual ones.
 
 ## Key Achievements
 
